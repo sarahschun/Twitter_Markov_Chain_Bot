@@ -1,37 +1,36 @@
-Welcome to Glitch
-=================
+# MLH Localhost <> Capital One
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
-
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
-
+This project contains the starter code for Basic Training: Bot Camp!
 
 Your Project
 ------------
+Click `Show` above and it will launch the app in a new browser tab. It starts by running the `main.py` program.
 
 ### ← README.md
 
-That's this file, where you can tell people what your cool website does and how you built it.
+That's this file!
 
-### ← index.html
+### ← twitter_scraper_fetcher.py
 
-Where you'll write the content of your website. 
+A Python file that contains functions which scrape data from Twitter.
 
-### ← style.css
+### ← config.py
 
-CSS files add styling rules to your content.
+This file sets some global variables (variables that are used by other parts of the program).
 
-### ← script.js
+### ← requirements.txt
 
-If you're feeling fancy you can add interactivity to your site with JavaScript.
+This file keeps track of which library versions we are using.
 
-### ← assets
+### ← main.py
 
-Drag in `assets`, like images or music, to add them to your project
+This main Python script starts the webpage and processes the scraper requests.
 
-Made by [Glitch](https://glitch.com/)
--------------------
+### ← static/ folder
 
-\ ゜o゜)ノ
+This folder contains the JavaScript, CSS and images that the web app uses.
+
+### ← homepage.html
+
+This launches the webpage of the Twitter app.
+
