@@ -22,11 +22,10 @@ def generate_message(body, methods=["POST"]):
 
   # Call get_user_tweets() from twitter_scraper_fetcher.py to scrape some tweets
   tweets = get_user_tweets(twitter_handle)
-
   try:
+    cleaned_tweets = clean_tweets_data(tweets)
     # Get a random tweet from the list of tweets
-    single_tweet = random.choice(tweets)
-    bot_answer = moderate(single_tweet)
+    bot_answer = random.choice(cleaned_tweets)
 
     # Send the answer to the app, to display to the user
     answer = {"username": twitter_handle, "message": bot_answer}
