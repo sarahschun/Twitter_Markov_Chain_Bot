@@ -32,7 +32,6 @@ def get_user_tweets(twitter_handle):
   return tweets
 
 def clean_tweets_data(tweets):
-  print(str(tweets))
   emoji_pattern = re.compile(
         "["
         u"\U0001F600-\U0001F64F"  # emoticons

@@ -9,3 +9,7 @@ emoji_pattern = re.compile(
         "]+",
         flags=re.UNICODE,
     )
+    
+    
+    
+    
