@@ -44,12 +44,13 @@ def clean_tweets_data(tweets):
   url_pattern = re.compile(r"http\S+", re.DOTALL)
   mentions_pattern = re.compile(r"@\S+", re.DOTALL)
 
+  cleaned_tweets = []
   for tweet in tweets:
     text_without_emoji = emoji_pattern.sub(r"", tweet)
     text_without_url = url_pattern.sub(r"", text_without_emoji)
-    cleaned_tweet = mentions_pattern.sub(r"", text_without_url)
+    cleaned_tweets.append(mentions_pattern.sub(r"", text_without_url))
 
-  return tweets 
+  return cleaned_tweets 
 
  
 
