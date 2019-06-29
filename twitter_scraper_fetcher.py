@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 
 CONTENT_CLASS_NAME = "TweetTextSize"
 CONTENT_CONTAINER_TAGS = ["p"]
