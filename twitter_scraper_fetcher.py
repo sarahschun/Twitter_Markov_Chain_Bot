@@ -41,7 +41,7 @@ def clean_tweets_data(tweets):
         "]+",
         flags=re.UNICODE,
     )
-  url_pattern = re.compile(r"http\S+", re.DOTALL)
+  url_pattern = re.compile(r"\S+\/\S+", re.DOTALL)
   mentions_pattern = re.compile(r"@\S+", re.DOTALL)
 
   cleaned_tweets = []
