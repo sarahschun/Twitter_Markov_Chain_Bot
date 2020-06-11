@@ -25,7 +25,7 @@ def generate_message(body, methods=["POST"]):
   try:
     cleaned_tweets = clean_tweets_data(tweets)
     # Get a random tweet from the list of tweets
-    bot_answer = random.choice(cleaned_tweets)
+    bot_answer = generate_bot_answer(twitter_handle, question)
 
     # Send the answer to the app, to display to the user
     answer = {"username": twitter_handle, "message": moderate(bot_answer)}
