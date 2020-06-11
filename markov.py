@@ -1,6 +1,6 @@
 # write code here!!
 import config
-from mlh_twitter_api import get_user_tweets as fetch
+from mlh_twitter_api *
 from twitter_scraper_fetcher import *
 import re
     

@@ -26,14 +26,13 @@ def generate_message(body, methods=["POST"]):
     cleaned_tweets = clean_tweets_data(tweets)
     # Get a random tweet from the list of tweets
     bot_answer = random.choice(cleaned_tweets)
-    moderated_answer = moderate(bot_answer)
 
     # Send the answer to the app, to display to the user
-    answer = {"username": twitter_handle, "message": bot_answer}
+    answer = {"username": twitter_handle, "message": moderate(bot_answer)}
     socketio.emit("bot answer", answer)
   except:
     bot_answer = "Sorry, I couldn't process that. Try again please."
-    socketio.emit("error", {"username": twitter_handle, "message": bot_answer})
+    socketio.emit("error", {"username": twitter_handle, "message": moderate(bot_answer)})
 
 if __name__ == "__main__":
     socketio.run(app)
