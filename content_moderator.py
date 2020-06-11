@@ -15,7 +15,6 @@ def moderate(message):
 
     return moderated_data
 
-
 def make_request_to_api(message):
     url = config.MLH_TWITTER_API + "/api/moderated_content"
     print(url)
