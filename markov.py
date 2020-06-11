@@ -1,7 +1,8 @@
 # write code here!!
 import config
-from mlh_twitter_api *
+from mlh_twitter_api import *
 from twitter_scraper_fetcher import *
+import random
 import re
     
  

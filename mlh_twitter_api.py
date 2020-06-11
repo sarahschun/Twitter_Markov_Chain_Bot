@@ -16,7 +16,7 @@ def moderate(message):
     return moderated_data
   
 # fetch tweets from our twitter-api
-def get_user_tweets(twitter_handle):
+def fetch(twitter_handle):
     url = config.MLH_TWITTER_API + "/api/tweets/" + twitter_handle
     req = urllib.request.Request(url)
     response = urllib.request.urlopen(req).read()
