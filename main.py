@@ -1,10 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_socketio import SocketIO
-from twitter_scraper_fetcher import *
-from mlh_twitter_api import moderate
 import json
 import config
-import random
+from markov import generate_bot_answer
+from content_moderator import moderate
+from twitter_scraper_fetcher import *
 
 app = Flask(__name__)
 socketio = SocketIO(app)
