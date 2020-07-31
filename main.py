@@ -5,6 +5,7 @@ import config
 from markov import generate_bot_answer
 from content_moderator import moderate
 from twitter_scraper_fetcher import *
+from markov import * 
 
 app = Flask(__name__)
 socketio = SocketIO(app)
@@ -21,9 +22,9 @@ def generate_message(body, methods=["POST"]):
   twitter_handle = body["username"]
 
   # Call get_user_tweets() from twitter_scraper_fetcher.py to scrape some tweets
-  tweets = get_user_tweets(twitter_handle)
+  # tweets = get_user_tweets(twitter_handle)
   try:
-    cleaned_tweets = clean_tweets_data(tweets)
+    # cleaned_tweets = clean_tweets_data(tweets)
     # Get a random tweet from the list of tweets
     bot_answer = generate_bot_answer(twitter_handle, question)
 
