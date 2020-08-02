@@ -9,6 +9,7 @@ from markov import *
 
 app = Flask(__name__)
 socketio = SocketIO(app)
+#print app
 
 # Renders UI
 @app.route("/")
